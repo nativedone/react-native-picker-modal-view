@@ -1,5 +1,11 @@
 // Global Imports
-import { StyleSheet, ViewStyle, ImageStyle, Platform, NativeModules } from 'react-native';
+import {
+	StyleSheet,
+	ViewStyle,
+	ImageStyle,
+	Platform,
+	NativeModules,
+} from "react-native";
 
 // const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : NativeModules.StatusBarManager.HEIGHT;
 
@@ -7,24 +13,28 @@ export const SearchStyle = StyleSheet.create({
 	closeButton: {
 		width: 13,
 		height: 13,
+		backgroundColor: "orange",
+		zIndex: 100000,
 	} as ImageStyle,
 	backButton: {
 		width: 15,
 		height: 15,
+		backgroundColor: "orange",
+		zIndex: 100000,
 	} as ImageStyle,
 	searchArea: {
-		flexDirection: 'row',
-		alignContent: 'center',
-		alignItems: 'center',
-		justifyContent: 'space-between',
+		flexDirection: "row",
+		alignContent: "center",
+		alignItems: "center",
+		justifyContent: "space-between",
 		paddingVertical: 10,
 	} as ViewStyle,
 	textInput: {
 		flex: 1,
-		borderColor: '#ccc',
+		borderColor: "#ccc",
 		borderWidth: 0.5,
 		borderRadius: 5,
-		color: '#000',
+		color: "#000",
 		padding: 10,
 	} as ViewStyle,
 	nonCloseButton: {
